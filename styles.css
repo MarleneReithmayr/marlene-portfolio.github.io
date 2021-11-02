@@ -1,3 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+}
+
+body {
+    margin: auto;
+    max-width: 1900px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+p {
+    line-height: 23px;
+}
+
+.background-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(158, 133, 154, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-primary,
+.button-secondary {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    border: 1px solid #9e859a;
+}
+
+.button-primary {
+    background-color: #9e859a;
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: white;
+    color: #9e859a;
+}
+
+.button-secondary {
+    background-color: white;
+    color: #9e859a;
+}
+
+.button-secondary:hover {
+    background-color: #9e859a;
+    color: white;
+}
+
+section {
+    padding: 30px 5%;
+}
+
+/*
+Header section
+ */
+.header {
+    height: 70vh;
+    color: white;
+    text-align: center;
+    background: url(assets/background.jpg) no-repeat fixed;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    min-height: 150px;
+}
+
+.about strong {
+    font-size: 20px;
+}
+
+.about div:first-child {
+    flex: 1;
+}
+
+.about div:last-child {
+    flex: 2;
+    padding: 20px;
+}
+
+.about img {
+    width: 100%;
+}
+
 /*
 Skill section
  */
@@ -81,27 +186,27 @@ Projects section
 }
 
 .projects ul li.project-2 {
-    background: url(assets/project1.jpg) no-repeat center;
+    background: url(assets/project2.jpg) no-repeat center;
     background-size: cover;
 }
 
 .projects ul li.project-3 {
-    background: url(assets/project1.jpg) no-repeat center;
+    background: url(assets/project3.jpg) no-repeat center;
     background-size: cover;
 }
 
 .projects ul li.project-4 {
-    background: url(assets/project1.jpg) no-repeat center;
+    background: url(assets/project4.jpg) no-repeat center;
     background-size: cover;
 }
 
 .projects ul li.project-5 {
-    background: url(assets/project1.jpg) no-repeat center;
+    background: url(assets/project5.jpg) no-repeat center;
     background-size: cover;
 }
 
 .projects ul li.project-6 {
-    background: url(assets/project1.jpg) no-repeat center;
+    background: url(assets/project6.jpg) no-repeat center;
     background-size: cover;
 }
 
