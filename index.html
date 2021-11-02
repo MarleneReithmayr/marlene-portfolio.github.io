@@ -1,109 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <section class="header">
-      <h1 class="background-overlay">
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: auto;
+            max-width: 1900px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 30px;
+        }
+
+        p {
+            line-height: 23px;
+        }
+
+        .background-overlay {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: rgba(158, 133, 154, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-primary,
+        .button-secondary {
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid #9e859a;
+        }
+
+        .button-primary {
+            background-color: #9e859a;
+            color: white;
+        }
+
+        .button-primary:hover {
+            background-color: white;
+            color: #9e859a;
+        }
+
+        .button-secondary {
+            background-color: white;
+            color: #9e859a;
+        }
+
+        .button-secondary:hover {
+            background-color: #9e859a;
+            color: white;
+        }
+
+        section {
+            padding: 30px 5%;
+        }
+
+        /*
+        Header section
+         */
+        .header {
+            height: 70vh;
+            color: white;
+            text-align: center;
+            background: url(assets/background.jpg) no-repeat fixed;
+            background-size: cover;
+            padding: 0;
+            position: relative;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            min-height: 150px;
+        }
+
+        .about strong {
+            font-size: 20px;
+        }
+
+        .about div:first-child {
+            flex: 1;
+        }
+
+        .about div:last-child {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .about img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<section class="header">
+    <h1 class="background-overlay">
         Hello! <br />
         I am a Web Developer
-      </h1>
-    </section>
-    <section class="about">
-      <div>
+    </h1>
+</section>
+<section class="about">
+    <div>
         <!--h2>About me</h2-->
-        <img src="assets/example.jpg" />
-      </div>
-      <div>
+        <img width="500" height="333" src="assets/example.jpg" alt="about me" />
+    </div>
+    <div>
         <p><strong>My name is Marlene</strong></p>
         <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing
-          elitr, sed diam nonumy eirmod t Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod t Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed diam nonumy eirmod t
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod t Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod t Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod t
         </p>
         <a href="mailto:marlene.reithmayr@gmx.net" class="button-primary"
-          >Contact me</a
+        >Contact me</a
         >
         <a href="assets/cv.pdf" class="button-secondary" target="_blank"
-          >Download CV</a
+        >Download CV</a
         >
-      </div>
-    </section>
-    <section class="skills">
-      <h2>My skills</h2>
-      <div>
+    </div>
+</section>
+<section class="skills">
+    <h2>My skills</h2>
+    <div>
         <ul>
-          <li>
-            <img src="assets/design.png" alt="design" />
-            <p class="title">Web Design</p>
-            <p>wefwefkwmiofjweifwwefwef</p>
-          </li>
-          <li>
-            <img src="assets/code.png" alt="pencil" />
-            <p class="title">Web Development</p>
-            <p>wefwefkwmiofjweifwwefwef</p>
-          </li>
-          <li>
-            <img src="assets/computer.png" alt="pencil" />
-            <p class="title">User Interface</p>
-            <p>wefwefkwmiofjweifwwefwef</p>
-          </li>
-          <li>
-            <img src="assets/pencil.png" alt="design" />
-            <p class="title">Clean Code</p>
-            <p>wefwefkwmiofjweifwwefwef</p>
-          </li>
+            <li>
+                <img width="30" height="30" loading="lazy" src="assets/design.png" alt="design" />
+                <p class="title">Web Design</p>
+                <p>wefwefkwmiofjweifwwefwef</p>
+            </li>
+            <li>
+                <img width="30" height="30" loading="lazy" src="assets/code.png" alt="pencil" />
+                <p class="title">Web Development</p>
+                <p>wefwefkwmiofjweifwwefwef</p>
+            </li>
+            <li>
+                <img width="30" height="30" loading="lazy" src="assets/computer.png" alt="pencil" />
+                <p class="title">User Interface</p>
+                <p>wefwefkwmiofjweifwwefwef</p>
+            </li>
+            <li>
+                <img width="30" height="30" loading="lazy" src="assets/pencil.png" alt="design" />
+                <p class="title">Clean Code</p>
+                <p>wefwefkwmiofjweifwwefwef</p>
+            </li>
         </ul>
-      </div>
-    </section>
-    <section class="projects">
-      <h2>Projects</h2>
-      <ul>
+    </div>
+</section>
+<section class="projects">
+    <h2>Projects</h2>
+    <ul>
         <li class="project-1">
-          <p>
-            <strong>Lorem ipsum</strong><br />
-            Lorem ipsum Lorem ipsum
-          </p>
+            <p>
+                <strong>Lorem ipsum</strong><br />
+                Lorem ipsum Lorem ipsum
+            </p>
         </li>
         <li class="project-2">
-          <p>
-            <strong>Lorem ipsum</strong><br />
-            Lorem ipsum Lorem ipsum
-          </p>
+            <p>
+                <strong>Lorem ipsum</strong><br />
+                Lorem ipsum Lorem ipsum
+            </p>
         </li>
         <li class="project-3">
-          <p>
-            <strong>Lorem ipsum</strong><br />
-            Lorem ipsum Lorem ipsum
-          </p>
+            <p>
+                <strong>Lorem ipsum</strong><br />
+                Lorem ipsum Lorem ipsum
+            </p>
         </li>
         <li class="project-4">
-          <p>
-            <strong>Lorem ipsum</strong><br />
-            Lorem ipsum Lorem ipsum
-          </p>
+            <p>
+                <strong>Lorem ipsum</strong><br />
+                Lorem ipsum Lorem ipsum
+            </p>
         </li>
         <li class="project-5">
-          <p>
-            <strong>Lorem ipsum</strong><br />
-            Lorem ipsum Lorem ipsum
-          </p>
+            <p>
+                <strong>Lorem ipsum</strong><br />
+                Lorem ipsum Lorem ipsum
+            </p>
         </li>
         <li class="project-6">
-          <p>
-            <strong>Lorem ipsum</strong><br />
-            Lorem ipsum Lorem ipsum
-          </p>
+            <p>
+                <strong>Lorem ipsum</strong><br />
+                Lorem ipsum Lorem ipsum
+            </p>
         </li>
-      </ul>
-    </section>
-  </body>
+    </ul>
+</section>
+</body>
 </html>
-
